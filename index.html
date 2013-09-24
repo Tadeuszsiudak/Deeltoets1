@@ -24,11 +24,11 @@
 			<h1 data-bind="title"></h1>
 			<p data-bind="description"></p>
 			<table>
-				<thead data-bind="schedule_Thead">
-					<tr >
+				<tbody>
+					<tr data-bind="scheduleThead">
 						<th data-bind="description"></th>
 				    </tr>
-				</thead>
+				</tbody>
 				<tbody data-bind="schedule">
 					<tr>
 				 		<td data-bind= "date"></td>
@@ -45,23 +45,23 @@
 			<h1 data-bind="title"></h1>
 			<p data-bind="description"></p>
 			<table>
-				<thead data-bind="game_Thead">
-					<tr>
+				<tbody>
+					<tr data-bind="gameThead">
 						<th data-bind="description"></th>
 				    </tr>
-				</thead>
-				<thead data-bind="game_Thead_winner">
-					<tr>
+				</tbody>
+				<thead>
+					<tr data-bind="gameTheadWinner">
 						<th data-bind="description"></th>
 				    </tr>
-				</thead>
+				</tbody>
 			</table>
 			<table>
-				<thead data-bind="game_Thead_game">
-					<tr>
+				<tbody>
+					<tr data-bind="gameTheadGame">
 						<th data-bind="description"></th>
 				    </tr>
-				</thead>
+				</tbody>
 				<tbody data-bind="game">
 					<tr>
 				 		<td data-bind= "score"></td>
@@ -74,13 +74,12 @@
 			</table>
 		</section>
 	
-		<section data-route="ranking">
-			<section data-route="game" class="active">
+		<section data-route="ranking" class="active">
 			<h1 data-bind="title"></h1>
 			<p data-bind="description"></p>
 			<table>
-				<thead data-bind="ranking_Thead">
-					<tr >
+				<thead>
+					<tr data-bind="rankingThead">
 						<th data-bind="description"></th>
 				    </tr>
 				</thead>
@@ -89,8 +88,8 @@
 					 		<td data-bind= "team"></td>
 							<td data-bind= "Win"></td>
 							<td data-bind= "Lost"></td>
-							<td data-bind= "Sw"></td>
-							<td data-bind= "Sl"></td>
+							<td data-bind= "Pw"></td>
+							<td data-bind= "Pl"></td>
 							<td data-bind= "Pw"></td>
 							<td data-bind= "Pl"></td>
 						</tr>

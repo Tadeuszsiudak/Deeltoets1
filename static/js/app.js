@@ -4,7 +4,7 @@ var frisbeeApp = frisbeeApp || {};
 	// Data objecten
 	frisbeeApp.schedule = {
 		title:'Pool A - Schedule',
-		schedule_Thead: [
+		scheduleThead: [
 			{
 				description: 'Monday 18 March'
 			}, {
@@ -31,7 +31,7 @@ var frisbeeApp = frisbeeApp || {};
 
 	frisbeeApp.game = {
 		title:'Pool A - Score: Boomsquad vs. Burning Snow',
-		game_Thead: [
+		gameThead: [
 			{
 				description: 'Team'
 			}, {
@@ -40,7 +40,7 @@ var frisbeeApp = frisbeeApp || {};
 				description: 'Team'
 			}
 		],
-		game_Thead_winner: [
+		gameTheadWinner: [
 			{
 				description: 'Boomsquad'
 			}, {
@@ -49,7 +49,7 @@ var frisbeeApp = frisbeeApp || {};
 				description: 'Burning Snow'
 			}
 		],
-		game_Thead_game: [
+		gameTheadGame: [
 			{
 				description: 'Score'
 			}, {
@@ -89,7 +89,7 @@ var frisbeeApp = frisbeeApp || {};
 
 	frisbeeApp.ranking = {
 		title:'Pool A - Ranking',
-		ranking_Thead: [
+		rankingThead: [
 			{
 				description: 'Team'
 			}, {
@@ -110,9 +110,9 @@ var frisbeeApp = frisbeeApp || {};
     		{ team: "Burning Snow", Win: "3", Lost: "1", Sw: "11", Sl: "4", Pw: "36", Pl: "23"},
     		{ team: "Beast Amsterdam", Win: "2", Lost: "2", Sw: "6", Sl: "8", Pw: "30", Pl: "34"},
     		{ team: "Amsterdam Money Gang", Win: "1", Lost: "3", Sw: "6", Sl: "10", Pw: "30", Pl: "37"}
-    	]
+		]
 	};
-	
+		
 	// Controller Init
 	frisbeeApp.controller = {
 		init: function () {
@@ -132,7 +132,7 @@ var frisbeeApp = frisbeeApp || {};
 			    	frisbeeApp.page.game();
 			    },
 
-			    '/ranking.html': function() {
+			    '/ranking': function() {
 			    	frisbeeApp.page.ranking();
 			    },
 			    '*': function() {
@@ -174,7 +174,7 @@ var frisbeeApp = frisbeeApp || {};
 			frisbeeApp.router.change();
 		},
 
-		page3: function () {
+		ranking: function () {
 			Transparency.render(qwery('[data-route=ranking')[0], frisbeeApp.ranking);
 			frisbeeApp.router.change();
 		}
