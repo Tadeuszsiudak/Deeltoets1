@@ -110,9 +110,9 @@ var frisbeeApp = frisbeeApp || {};
     		{ team: "Burning Snow", Win: "3", Lost: "1", Sw: "11", Sl: "4", Pw: "36", Pl: "23"},
     		{ team: "Beast Amsterdam", Win: "2", Lost: "2", Sw: "6", Sl: "8", Pw: "30", Pl: "34"},
     		{ team: "Amsterdam Money Gang", Win: "1", Lost: "3", Sw: "6", Sl: "10", Pw: "30", Pl: "37"}
-		]
+		]		
 	};
-		
+	
 	// Controller Init
 	frisbeeApp.controller = {
 		init: function () {
